@@ -54,6 +54,7 @@ body {
 /* BUTTONS */
 
 .main-navbar .btn {
+    align-self: center;
     background: #3498db;
     background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
     background-image: -moz-linear-gradient(top, #3498db, #2980b9);
@@ -66,9 +67,13 @@ body {
     color: #ffffff;
     font-size: 1.2rem;
     padding: 0.5em 1.3em 0.5em 1.3em;
+    text-align: center;
     text-decoration: none;
-    width: 13%;
   }
+
+.main-navbar .btn {
+    flex: 0 0.5 20%;
+}
   
 .main-navbar .btn:hover {
     background: #3cb0fd;
@@ -85,6 +90,7 @@ body {
 
 .main-navbar input {
     width: 15rem;
+    flex: 0 0.5 20%;
 }
 
 
@@ -408,13 +414,38 @@ body {
 
 @media (max-width: 768px) {
 
+
     .main-navbar .btn {
         font-size: 0.5rem;
         padding: 0.2em 1.3em 0.2em 1.3em;
       }
 
+      .first-section-left {
+        width: 85vw;
+      }
+
+
     .first-section-left .btn {
         align-self: center;
+    }
+
+
+    .main-separator {
+        padding: 0;
+    }
+
+    #about p {
+        font-size: 1.5rem;
+        width: 85vw;
+    }
+
+    #offers .container {
+        width: 60vw;
+    }
+
+
+    #articles p {
+        width: 75vw;
     }
 
     .article-flexbox {
@@ -460,6 +491,11 @@ body {
 }
 
 @media (max-width: 640px) {
+
+    .first-section-left {
+        width: 75vw;
+    }
+
     .first-section-left h1 {
         font-size: 4rem;
     }
@@ -467,19 +503,95 @@ body {
     .first-section-left p {
         font-size: 1.2rem;
     } 
+
+    #offers h2 {
+        padding-top: 0;
+        margin-top: 0;
+    }
+
 }
 
 @media (max-width: 475px) {
    .main-navbar {
     flex-wrap: wrap;
+
    } 
 
    .main-navbar .btn {
-    font-size: 0.6rem;
-    padding: 0.2em 2em 0.2em 2em;
+    font-size: 0.5rem;
+    flex-wrap: wrap;
+    padding: 0.1em 0.3em 0.1em 0.3em;
   }
+
+  #first-section .btn {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  #articles .cards h3 {
+    font-size: 1.3rem;
+    padding: 0;
+  }
+
+
 }
 
 @media (max-width: 375px) {
+    .main-navbar {
+        flex-wrap: wrap;
     
+       } 
+    
+       .main-navbar .btn {
+        font-size: 0.3rem;
+        flex-wrap: wrap;
+        padding: 0.2em 0.3em 0.2em 0.3em;
+      }  
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      #first-section .btn {
+        font-size: 1.5rem;
+      }
+
+      #first-section {
+        padding: 4rem;
+      }
+
+      .first-section-left p {
+        width: 85vw;
+      }
+
+      .first-section-left h1 {
+        width: 85vw;
+        font-size: 3rem;
+      }
+
+      .main-separator {
+        margin: 0 auto 0 auto;
+      }
+
+      #offers .container {
+        background-position: top;
+        border: none;
+        padding: 0;
+        width: 95vw;
+      }
+
+
+
+      #offers h2 {
+        font-size: 3rem;
+        width: 95%;
+      }
+
+      #offers p {
+        font-size: 1.4rem;
+        width: 100%;
+      }
 }
