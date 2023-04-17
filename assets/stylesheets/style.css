@@ -1,0 +1,224 @@
+/* 
+#222831
+#393E46
+#00ADB5
+#EEEEEE
+*/
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+
+body {
+    background-color: #EEEEEE;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none !important;
+    scroll-behavior: smooth !important;
+}
+
+/* LEGAL NAVBAR */
+
+.rgpd-navbar {
+    color: #222831;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: right;
+    margin: 0;
+    width: 100%;
+}
+
+/* MAIN NAVBAR */
+
+.main-navbar {
+    background-color: #EEEEEE;
+    border-top: 2px solid #222831;
+    border-bottom: 2px solid #222831;
+    color: #393E46;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+    margin: 0 0 0 0;
+    padding: 1rem 0 1rem 0;
+    position: sticky;
+    top: 0.01rem;
+    width: 100%;
+    z-index: 1;
+}
+
+/* BUTTONS */
+
+.main-navbar .btn {
+    align-self: center;
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: 0.5em 1.3em 0.5em 1.3em;
+    text-align: center;
+    text-decoration: none;
+  }
+
+.main-navbar .btn {
+    flex: 0 0.5 20%;
+}
+  
+.main-navbar .btn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+  }
+
+
+  /* SEARCH BAR */
+
+.main-navbar input {
+    width: 15rem;
+    flex: 0 0.5 20%;
+}
+
+/* SITE */
+
+/* FISCAL PAGE */
+
+#fiscal {
+    background-image: url(../images/9op.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw;
+    padding: 0 0 5rem 0;
+}
+
+
+/* flexbox */
+
+#fiscal .flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex: 0 0 100%; */
+    gap: 5%;
+    justify-content: space-around;
+}
+
+
+/* title */
+
+#fiscal h1 {
+    background-color: hsla(229, 100%, 59%, 0.3);
+    color: white;
+    font-size: 5rem;
+}
+
+/* Containers */
+
+#fiscal .container {
+    color: white;
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
+
+#fiscal .left {
+    background-color: hsla(0, 0%, 0%, 0.7);
+    padding: 1rem;
+    width: 40%;
+    min-width: 42%;
+    max-width: 60ch;    
+}
+
+#fiscal .right {
+    background-color: hsla(0, 0%, 0%, 0.7);
+    padding: 1rem;
+    width: 40%; 
+    min-width: 42%;
+    max-width: 60ch;
+}
+
+#fiscal h2 {
+    font-size: 4rem;
+}
+
+#fiscal p {
+    font-size: 1.8rem;
+}
+
+@media (max-width: 1920px) {
+    
+}
+
+@media (max-width: 1536px) {
+    
+}
+
+@media (max-width: 1280px) {
+    
+}
+
+@media (max-width: 1024px) {
+    #fiscal .flexbox {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    #fiscal .left {
+        background-color: hsla(0, 0%, 0%, 0.7);
+        padding: 1rem;
+        width: 90%;   
+    }
+
+    #fiscal .left p {
+        max-width: 60ch;    
+    }
+    
+    #fiscal .right {
+        background-color: hsla(0, 0%, 0%, 0.7);
+        padding: 1rem;
+        width: 90%; 
+        max-width: 60ch;
+    }
+}
+
+@media (max-width: 768px) {
+    #fiscal h2 {
+        font-size: 2rem;
+    }
+    
+    #fiscal p {
+        font-size: 1rem;
+    }
+
+    .main-navbar .btn {
+        font-size: 0.6rem;
+      }
+
+}
+
+@media (max-width: 640px) {
+    
+}
+
+@media (max-width: 475px) {
+    
+}
+
+@media (max-width: 375px) {
+    .main-navbar .btn {
+        font-size: 0.5rem;
+      }
+}
